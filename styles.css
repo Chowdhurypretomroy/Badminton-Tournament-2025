@@ -1,0 +1,68 @@
+body {
+    background-color: #1f2937;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+/* Add this to styles.css */
+body {
+    background-color: #1A1A1A; /* Dark gray/black background */
+    margin: 0;
+    padding: 0;
+  }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d3748;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF7A00;
+}
+
+/* Animation for the championship */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px gold;
+    }
+    50% {
+        box-shadow: 0 0 20px gold, 0 0 30px orange;
+    }
+    100% {
+        box-shadow: 0 0 5px gold;
+    }
+}
+
+.bg-gradient-to-r.from-amber-500.to-gold {
+    animation: glow 2s infinite;
+}
+
+/* Improved readability for small screens */
+@media (max-width: 640px) {
+    table th, table td {
+        padding: 0.5rem !important;
+    }
+    
+    .text-3xl {
+        font-size: 1.5rem !important;
+    }
+    
+    .text-2xl {
+        font-size: 1.25rem !important;
+    }
+    
+    .grid-cols-2 {
+        grid-template-columns: 1fr !important;
+    }
+}
